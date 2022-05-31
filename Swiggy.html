@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+    <style>
+      .box1 {
+        height: 450px;
+        width: 100%;
+      }
+      .b1:hover{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+   
+      
+    </style>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+    crossorigin="anonymous"
+  />
+  <!-- CSS only -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./bootstrap-icons-1.7.2/fonts/bootstrap-icons.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <body>
+    <div class="container">    
+      <nav class="navbar navbar-expand-sm navbar-light alert-light  fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="swiggypic.png" width="70px" height="70px" class="logo" alt="" onmouseover=logoScale()>
+        </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarID"
+            aria-controls="navbarID"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarID">
+            <div class="navbar-nav" style="font-weight: bolder">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Aurangabad,UsmanPura
+              </a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarID">
+            <div class="navbar-nav" style="font-weight: bolder">
+              <a class="nav-link active" aria-current="page" href="#" ><i class="bi bi-search" ></i> Search </a
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="nav-link active" aria-current="page" href="#">
+                 Offers
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-disc"></i>Help</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i>Sign In</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i>Cart</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <br>  <br>
+
+    <div class="container-fluid bg-dark box1">
+      <div class="container">
+          <br> <br><br>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div id="carouselId" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselId"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-bs-target="#carouselId" data-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3" >
+                      <img
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pywdzesagf0uyfywthql"
+                        alt="First slide"
+                        width="300px"
+                        height="300px"
+                        class="b3"
+                        onmouseover="changeScale()"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <img
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/qsgjyrelvjr3atzl0ypm"
+                        alt="First slide"
+                        width="300px"
+                        height="300px"
+                        class="b4"
+                        onmouseover="changeScale2()"
+                      />
+                    </div>              
+                  <div class="col-sm-6 col-md-6 col-lg-3 ">                    
+                      <img
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/mmwaugffwvpy53kxcxtc"
+                        width="300px"
+                        height="300px"
+                        alt="third slide"
+                        class="b5"
+                        onmouseover="changeScale3()"
+                      />                   
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">                    
+                    <img
+                      src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/mect7j85oikaykkatt5p"
+                      width="300px"
+                      height="300px"
+                      alt="third slide"
+                      class="b6"
+                      onmouseover="changeScale4()"
+                    />                   
+                  </div>                  
+                </div>
+            </div>
+            <!----->
+            <div class="carousel-item">
+            <div class="row">
+                <div class="col-sm-6 col-md-3  col-sm-12">                  
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/omhjfsrgi5fjkg81ivhj"
+                      width="300px"
+                      height="300px"                     
+                      alt="First slide"
+                      class="b7"
+                      onmouseover="changeScale5()"
+                    />
+                </div>
+                <div class="col-sm-6 col-md-3 ">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3"
+                      width="300px"
+                      height="300px"
+                      alt="First slide"
+                      class="b8"
+                      onmouseover="changeScale6()"
+                    />
+                    
+                </div>                
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselId"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselId"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">                  
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br> <br><br> <br>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light alert-light p-3 fixed">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarID"
+                aria-controls="navbarID"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarID">
+                <div class="navbar-nav" style="font-weight: bolder">
+                 <h2> <a class="nav-link active" aria-current="page" href="#"
+                    >142 Restaurants
+                  </a></h2>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarID">
+                <div class="navbar-nav" >
+                  <a class="nav-link active" aria-current="page" href="#">Relavance </a
+                  >&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="nav-link active" aria-current="page" href="#">Delivery Time</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="nav-link active" aria-current="page" href="#">Rating</a
+                  >&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="nav-link active" aria-current="page" href="#">Cost: Low to High</a
+                  >&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="nav-link active" aria-current="page" href="#">Cost: High to Low</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="nav-link active" aria-current="page" href="#"><b>Filter</b></a>
+                  <i class="bi bi-sort-up-alt" style="color: orange; font-size: 2em;"></i>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+              </div>
+            </div>
+          </nav>
+          <hr>
+
+            <div class="container-fluid">
+                <div class="container">                
+                  <div class="row ">
+                      <div class="col-md-3 col-md-6 col-lg-3 b1">
+                        <br>
+                          <img src="https://media.istockphoto.com/photos/idly-sambar-or-idli-with-sambhar-and-green-red-chutney-popular-south-picture-id1024549286?b=1&k=20&m=1024549286&s=170667a&w=0&h=Fqq70VEXoIAFCLrWzb93xji11iaI9VXr75h2Ykzbx9k="
+                          width="270px" height="200px" alt="">     
+                          <br> 
+                          <div class="text">
+                            <h5>Shri Deepali South Indian</h5>
+                            <p style="opacity: 0.6;">South Indian,Chinese,Fast Food</p>
+                            <div class="d-flex justify-content-around" >
+                                <div class="text-light" style="background-color: green;width: 2.5em;">
+                                    * 4.0
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    29 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.100 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div>    
+                        </div>
+                        <div class="col-md-3 col-md-6 col-lg-3 b1">
+                          <br>
+                            <img src="https://media.istockphoto.com/photos/variety-of-ice-cream-cones-picture-id685816670?b=1&k=20&m=685816670&s=170667a&w=0&h=W1thI-xX5wcfBNpbwc9HAFGC20rs_obEWtZkSKZWams="
+                            width="270px" height="200px" alt="">   
+                            <br> 
+                          <div class="text">
+                            <h5>Cone-N-Cakes</h5>
+                            <p style="opacity: 0.6;">Dessert,chats,Chinese,Fast Food,Street Food</p>
+                            <div class="d-flex justify-content-around" >
+                                <div class="text-light" style="background-color: green;width: 2.5em;">
+                                    * 4.0
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    23 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.150 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div> 
+                        </div>
+                        <div class="col-md-3 col-md-6 col-lg-3 b1">
+                          <br>
+                            <img src="https://media.istockphoto.com/photos/traditional-indian-cuisine-picture-id928223188?k=20&m=928223188&s=612x612&w=0&h=1l9miNYOd-QP0_MdDBHshl4vF0QX6UWF1vgr6e2KqX4="
+                            width="270px" height="200px" alt="">   
+                            <br> 
+                          <div class="text">
+                            <h5>Trupti Fast Food</h5>
+                            <p style="opacity: 0.6;">North Indian,South Indian,Pizzas,chats,Chinese,Fast Food,Street Food</p>
+                            <div class="d-flex justify-content-around" >
+                                <div class="text-light" style="background-color: orange;width: 2.5em;">
+                                    * 3.9
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    23 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.150 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div> 
+                        </div>
+                        <div class="col-md-3 col-md-6 col-lg-3  b1">
+                          <br>
+                            <img src="https://media.istockphoto.com/photos/cheese-burger-with-bacon-on-black-dark-background-picture-id1295796231?b=1&k=20&m=1295796231&s=170667a&w=0&h=lipbuWnWZE_-ScipwtVamsug7sd4j6hxiIUN0PkwWD8="
+                            width="270px" height="200px" alt="">   
+                            <br> 
+                          <div class="text">
+                            <h5>Burger Junction</h5>
+                            <p style="opacity: 0.6;">Fast Food</p>
+                            <div class="d-flex justify-content-around" >
+                                <div>
+                                    *--
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    26 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.200 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div> 
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <br><br><br>
+            <div class="container-fluid">
+                <div class="container">                
+                  <div class="row">
+                      <div class="col-md-3 col-md-6 col-lg-3  b1" >
+                        <br>
+                          <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emElMjBodXQlMjB3aXRoJTIwYm94fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          width="270px" height="200px" alt="">     
+                          <br> 
+                          <div class="text">
+                            <h6>Pizza Hut</h6>
+                            <p style="opacity: 0.6;">Pizza</p>
+                            <div class="d-flex justify-content-around" >
+                                <div class="text-light" style="background-color: rgb(236, 155, 32);width: 2.5em;">
+                                    * 3.9
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    29 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.350 FOR TWO
+                                </div>
+                                
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div>    
+                        </div>
+                        <div class="col-md-3 col-md-6 col-lg-3  b1">
+                          <br>
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FrZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            width="270px" height="200px" alt="">   
+                            <br> 
+                          <div class="text">
+                            <h6>Monginis Cake</h6>
+                            <p style="opacity: 0.6;">Bakery ,Desserts</p>
+                            <div class="d-flex justify-content-around" >
+                                <div class="text-light" style="background-color: green;width: 2.5em;">
+                                    * 4.0
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    18 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.300 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div> 
+                        </div>
+                        <div class="col-md-3 col-md-6 col-lg-3  b1">
+                          <br>
+                            <img src="https://media.istockphoto.com/photos/green-peas-or-matar-paneer-curry-picture-id1325272041?b=1&k=20&m=1325272041&s=170667a&w=0&h=0bXXbN1Udw9siz-pPEDzYSZcY18_3G8D0dz1uosGkgY="
+                            width="270px" height="200px" alt="">   
+                            <br> 
+                          <div class="text">
+                            <h6>Kakaji's Veg Restaurant</h6>
+                            <p style="opacity: 0.6;">Rajastaani,North Indian,Panjabo,Maharashtrain,Sweets</p>
+                            <div class="d-flex justify-content-around" >
+                                <div class="text-light" style="background-color: orange;width: 2.5em;">
+                                    * 3.9
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    23 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.150 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div> 
+                        </div>
+                        <div class="col-md-3 col-md-6 col-lg-3 b1">
+                          <br>
+                            <img src="https://media.istockphoto.com/photos/classic-grilled-cuban-sandwich-picture-id1305692648?b=1&k=20&m=1305692648&s=170667a&w=0&h=hsJt2IBzHUYqFGm79L07zDE8imQn8vzcfgHfaNRxvPI="
+                            width="270px" height="200px" alt="">   
+                            <br> 
+                          <div class="text">
+                            <h6>Salt & Pepper</h6>
+                            <p style="opacity: 0.6;">Fast Food,Snaks,Bervages</p>
+                            <div class="d-flex justify-content-around" >
+                                <div>
+                                    *--
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    28 Mins
+                                </div> .
+                                <div style="opacity: 0.7;">
+                                    Rs.200 FOR TWO
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div> 
+                            <p style="text-align: center; color: rgb(86, 86, 243);font-weight: bold;">QUICK VIEW</p>
+                        </div> 
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+     function changeScale() {
+      gsap.to(".b3",{
+        scale:1.1,
+        yoyo:true,
+        repeat:1,
+      })
+     }
+     function changeScale2() {
+      gsap.to(".b4",{
+        scale:1.1,
+        yoyo:true,
+        repeat:1,
+      })
+     }
+     function changeScale3() {
+      gsap.to(".b5",{
+        scale:1.1,
+        yoyo:true,
+        repeat:1,
+      })
+     }
+     function changeScale4() {
+      gsap.to(".b6",{
+        scale:1.1,
+        yoyo:true,
+        repeat:1,
+      })
+     }
+     function changeScale5() {
+      gsap.to(".b7",{
+        scale:1.1,
+        yoyo:true,
+        repeat:1,
+      })
+     }
+     function changeScale6() {
+      gsap.to(".b8",{
+        scale:1.1,
+        yoyo:true,
+        repeat:1,
+      })
+     }
+     function logoScale(){
+       gsap.to(".logo",{
+         scale:1.2,
+         yoyo:true,
+         repeat:1,
+       })
+     }
+     
+
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
